@@ -1,38 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.question-card {
+  /* Center the div  */
+  margin: 0 auto;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* Dimensions  */
+  width: 80%; /* Can be in percentage also. */
+  height: auto;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* Visual  */
+  background-color: #007bff;
+  padding: 16px;
+  border-radius: 16px;
   color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  cursor: pointer;
+  margin: 8px 20px;
+  background-color: aliceblue;
+  padding: 16px;
+  border: 1px solid #84c5fe;
+  border-radius: 20px;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  transform: translateX(-3%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li:hover {
+  color: #004085;
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+  transition: all 0.5s ease;
+}
+
+.question-text {
+  color: white;
+  font-size: 25px;
+}
+
+/* Final Results  */
+
+.final-results {
+  /* Center the div  */
+  margin: 0 auto;
+
+  /* Dimensions  */
+  width: 50%; /* Can be in percentage also. */
+  height: auto;
+  margin-top: 64px;
+
+  /* Visual  */
+  background-color: #007bff;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+button {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 24px;
 }
